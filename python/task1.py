@@ -4,7 +4,7 @@ numbers = []
 for i in range(10):
     numbers.append(random.randint(-10, 10))
 
-print("Исходный список:", numbers)
+print(numbers)
 
 sum_n = 0
 for num in numbers:
@@ -42,12 +42,12 @@ else:
     start_indx = indx_max
     end_indx = indx_min
 
-product_between_min_max = 1
+min_max = 1
 
 if end_indx - start_indx > 1:
     for i in range(start_indx + 1, end_indx):
-        p_min_max *= numbers[i]
-    print("Произведение элементов между min и max:", p_min_max)
+        min_max *= numbers[i]
+    print("Произведение элементов между min и max:", min_max)
 else:
     print("Между минимальным и максимальным элементами нет других элементов")
 
@@ -61,12 +61,12 @@ for i in range(len(numbers)):
             first_el = i
         last_el = i
 
-sum_between_positives = 0
+sum_p = 0
 
 if first_el != -1 and last_el != -1 and first_el != last_el:
     for i in range(first_el + 1, last_el):
-        sum_positives += numbers[i]
-    print("Сумма элементов между первым и последним положительными:", sum_positives)
+        sum_p += numbers[i]
+    print("Сумма элементов между первым и последним положительными:", sum_p)
 else:
     print("В списке меньше двух положительных элементов")
 

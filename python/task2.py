@@ -2,10 +2,10 @@ import random
 
 
 numbers = []
-for _ in range(10):
+for i in range(10):
     numbers.append(random.randint(-10, 10))
 
-print("Исходный список:", numbers)
+print(numbers)
 
 
 chet_numbers = []
