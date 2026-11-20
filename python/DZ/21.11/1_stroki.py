@@ -7,8 +7,8 @@ for i in list_2:
     if i.isalnum():
         empty_strok += i
 
-list_2 = list_1[::-1]
-if list_1 == list_2:
+revers = empty_strok[::-1]
+if empty_strok == revers:
     print("Это палиндром")
 else:
     print("Не палиндром")
